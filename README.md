@@ -36,7 +36,7 @@ docker compose up -d
 
 ### Run Benchmark
 
-This benchmarks the running container using wrk and saves the results in wrk_results.csv.
+This benchmarks the running container using `wrk` and saves the results in `wrk_results.csv`.
 
 ```bash
 ./benchmark.sh
@@ -68,3 +68,12 @@ The benchmark is based on the average of three test runs using `wrk`, configured
 - Flask-Migrate
 - Gunicorn
 - Psycopg2-binary
+
+## License
+
+This project is open source and available under the terms of the [MIT License](LICENSE).
+
+---
+
+Thank you for checking out this repository!  
+Feel free to fork, contribute, or open an issue if you have feedback or suggestions.
