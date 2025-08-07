@@ -54,7 +54,8 @@ This benchmarks the running container using `wrk` and saves the results in `wrk_
 | slim       | ✅                 | ❌                | 157.71 MB  | 20s        |
 | full       | ❌                 | ✅                | 1015.89 MB | 2s         |
 
-> ℹ️ Enabling Python bytecode (.pyc files) may improve performance by avoiding source recompilation at runtime. 
+ℹ️ Enabling Python bytecode (.pyc files) may improve performance by avoiding source recompilation at runtime. 
+
 ℹ️ Multi-stage builds significantly reduce image size without sacrificing runtime performance.
 
 ## Performance Benchmark
