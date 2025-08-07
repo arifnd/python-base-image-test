@@ -89,6 +89,34 @@ The benchmark is based on the average of three test runs using `wrk`, configured
 | slim-multi-bytecode    | 278,98       | 35,47   |
 | full                   | 278,10       | 35,57   |
 
+## Security
+
+To check for known security vulnerabilities in your Docker image, you can use [Trivy](https://github.com/aquasecurity/trivy), a simple and fast vulnerability scanner.
+
+Run the following command:
+
+```bash
+trivy image <image-name>
+```
+
+### Sample Results
+
+Below are example scan results comparing the three Python base images used in this project:
+
+```text
+flask-app:alpine (alpine 3.22.1)
+================================
+Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 1)
+
+flask-app:slim (debian 12.11)
+=============================
+Total: 106 (UNKNOWN: 1, LOW: 74, MEDIUM: 22, HIGH: 7, CRITICAL: 2)
+
+flask-app:full (debian 12.11)
+=============================
+Total: 1711 (UNKNOWN: 6, LOW: 775, MEDIUM: 666, HIGH: 253, CRITICAL: 11)
+```
+
 ## Dependencies
 
 - Flask
