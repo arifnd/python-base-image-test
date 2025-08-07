@@ -61,10 +61,10 @@ This benchmarks the running container using `wrk` and saves the results in `wrk_
 
 | Base Image | Multi-Stage Build | Bytecode Enabled | Image Size | Build Time |
 | ---------- | ----------------- | ---------------- | ---------- | ---------- |
-| alpine     | ❌                 | ✅                | 100.71 MB  | 3s         |
+| alpine     | ❌                 | ❌                | 100.71 MB  | 3s         |
 | alpine     | ✅                 | ✅                | 87.05 MB   | 29s        |
 | alpine     | ✅                 | ❌                | 87.05 MB   | 26s        |
-| slim       | ❌                 | ✅                | 171.35 MB  | 2s         |
+| slim       | ❌                 | ❌                | 171.35 MB  | 2s         |
 | slim       | ✅                 | ✅                | 157.71 MB  | 22s        |
 | slim       | ✅                 | ❌                | 157.71 MB  | 20s        |
 | full       | ❌                 | ✅                | 1015.89 MB | 2s         |
