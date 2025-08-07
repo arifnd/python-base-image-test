@@ -77,6 +77,17 @@ This benchmarks the running container using `wrk` and saves the results in `wrk_
 
 The benchmark is based on the average of three test runs using `wrk`, configured with 2 threads, 10 concurrent connections, and a duration of 10 seconds per test.
 
+| image                  | requests/sec | latency |
+|------------------------|--------------|---------|
+| alpine                 | 259,77       | 38,08   |
+| alpine-multi           | 261,85       | 37,81   |
+| alpine-multi-bytecode  | 262,34       | 37,71   |
+| slim                   | 283,03       | 34,97   |
+| slim-multi             | 282,86       | 35,00   |
+| slim-multi-bytecode    | 278,98       | 35,47   |
+| full                   | 278,10       | 35,57   |
+
+
 ## Dependencies
 
 - Flask
