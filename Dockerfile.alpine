@@ -1,0 +1,15 @@
+FROM python:3.12-alpine
+
+# Working directory
+WORKDIR /app
+
+# Install Python packages
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Copy app code
+COPY . .
+
+# Run the Flask app
+CMD ["gunicorn", "main:app", "-b", "0.0.0.0:8000", "--workers", "2"]

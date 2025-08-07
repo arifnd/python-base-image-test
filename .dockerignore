@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+app/__pycache__/
+benchmark.sh
+build.sh
+Dockerfile.*
+migrate.sh
+env/
+venv/
+.wheels/
